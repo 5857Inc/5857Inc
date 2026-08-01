@@ -119,7 +119,7 @@
     position: relative;
     min-height: 88vh;
     display:flex;
-    align-items:flex-end;
+    align-items:flex-start;
     overflow:hidden;
   }
   .hero-bg{
@@ -135,13 +135,13 @@
   .hero-scrim{
     position:absolute; inset:0;
     background:
-      linear-gradient(180deg, rgba(24,20,14,0.05) 0%, rgba(24,20,14,0.18) 38%, rgba(20,16,11,0.86) 100%),
-      linear-gradient(90deg, rgba(20,16,11,0.55) 0%, rgba(20,16,11,0.05) 55%);
+      linear-gradient(180deg, rgba(20,16,11,0.82) 0%, rgba(24,20,14,0.24) 45%, rgba(24,20,14,0.02) 68%),
+      linear-gradient(90deg, rgba(20,16,11,0.5) 0%, rgba(20,16,11,0.05) 55%);
     z-index:1;
   }
   .hero-copy{
     position:relative; z-index:2;
-    padding: 64px 0 68px;
+    padding: 64px 0 0;
     max-width: 640px;
   }
   .eyebrow{
@@ -248,7 +248,7 @@
 
   /* ---------- Three pillars ---------- */
   .pillars{
-    padding: 90px 0;
+    padding: 60px 0;
     border-top: 1px solid rgba(110,86,66,0.18);
     border-bottom: 1px solid rgba(110,86,66,0.18);
     background: var(--paper-deep);
@@ -256,7 +256,7 @@
   .pillars-head{
     text-align:center;
     max-width: 560px;
-    margin: 0 auto 56px;
+    margin: 0 auto 34px;
   }
   .pillars-head h2{
     font-family: var(--serif);
@@ -279,7 +279,7 @@
     background: var(--paper);
     border: 1px solid rgba(110,86,66,0.22);
     border-radius: 4px;
-    padding: 38px 30px 32px;
+    padding: 20px 30px 30px;
     position:relative;
     transition: transform .25s ease, box-shadow .25s ease;
   }
@@ -288,8 +288,8 @@
     box-shadow: 0 14px 30px -18px rgba(43,43,43,0.35);
   }
   .pillar-icon{
-    width:46px; height:46px;
-    margin-bottom: 22px;
+    width:30px; height:30px;
+    margin-bottom: 8px;
   }
   .pillar-icon svg{ width:100%; height:100%; }
   .pillar h3{
@@ -412,7 +412,7 @@
     .wrap{ padding:0 20px; }
     .nav-row{ padding: 16px 20px; }
     .hero{ min-height: 68vh; }
-    .hero-copy{ padding: 44px 0 44px; }
+    .hero-copy{ padding: 44px 0 0; }
     .pillars{ padding:60px 0; }
     .quote-band{ padding:70px 0; }
   }
@@ -453,8 +453,6 @@
       <div class="hero-copy">
         <p class="eyebrow">Made in Ontario</p>
         <h1>Games, music, and books made to <em>bring people together.</em></h1>
-        <p class="sub">Practice. Create. Gather.</p>
-        <p class="lede">Games to practice with, songs to sing, and books to read together. That's the whole idea.</p>
         <div class="hero-actions">
           <a href="games.html" class="btn btn-primary">Explore what we make</a>
           <a href="about.html" class="btn btn-ghost">Our story</a>
@@ -469,7 +467,6 @@
     <div class="wrap">
       <div class="pillars-head">
         <h2>Three ways to gather</h2>
-        <p>Each one is meant to end somewhere other than a screen — a game table, a living room, a kitchen full of people.</p>
       </div>
 
       <div class="pillar-grid">
