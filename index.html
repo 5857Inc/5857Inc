@@ -316,9 +316,7 @@
   /* ---------- Quote band ---------- */
   .quote-band{
     background: var(--forest);
-    color: var(--paper);
-    padding: 100px 0;
-    text-align:center;
+    padding: 22px 0;
     position:relative;
   }
   .quote-band::before,
@@ -332,28 +330,6 @@
   }
   .quote-band::before{ top:-1px; }
   .quote-band::after{ bottom:-1px; transform: rotate(180deg); }
-
-  .quote-band blockquote{
-    font-family: var(--serif);
-    font-style: italic;
-    font-weight: 400;
-    font-size: clamp(1.6rem, 3.4vw, 2.5rem);
-    max-width: 16ch;
-    margin: 0 auto;
-    line-height: 1.35;
-    color: var(--wheat);
-  }
-  .quote-band .mark{
-    display:block;
-    font-family: var(--sans);
-    font-style:normal;
-    font-size: 0.8rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--sky);
-    margin-top: 24px;
-    opacity: 0.85;
-  }
 
   /* ---------- Footer ---------- */
   footer{
@@ -414,7 +390,6 @@
     .hero{ min-height: 68vh; }
     .hero-copy{ padding: 44px 0 0; }
     .pillars{ padding:60px 0; }
-    .quote-band{ padding:70px 0; }
   }
 </style>
 </head>
@@ -453,10 +428,6 @@
       <div class="hero-copy">
         <p class="eyebrow">Made in Ontario</p>
         <h1>Games, music, and books made to <em>bring people together.</em></h1>
-        <div class="hero-actions">
-          <a href="games.html" class="btn btn-primary">Explore what we make</a>
-          <a href="about.html" class="btn btn-ghost">Our story</a>
-        </div>
       </div>
     </div>
   </section>
@@ -521,12 +492,8 @@
     </div>
   </section>
 
-  <!-- QUOTE -->
-  <section class="quote-band">
-    <div class="wrap">
-      <blockquote>&ldquo;Pull up a chair.&rdquo;</blockquote>
-    </div>
-  </section>
+  <!-- DIVIDER -->
+  <section class="quote-band"></section>
 
 </main>
 
@@ -535,7 +502,7 @@
     <div class="footer-row">
       <div class="footer-brand">
         <a href="/" class="wordmark">5857<span class="dot">.</span></a>
-        <p>Thoughtful games, music, and books, built to prepare people for the table — not replace it.</p>
+        <p>Games, music, and books made to bring people together.</p>
       </div>
 
       <div class="footer-cols">
